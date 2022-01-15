@@ -25,7 +25,7 @@ header {
 .logo {
   max-width: 115px;
   height: auto;
-  padding-left: 50px;
+  padding: 0px 55px 0px 20px;
 }
 
 .navigation {
@@ -59,20 +59,28 @@ a:hover {
   padding-right: 50px;
 }
 
-.fa-search {
-  padding-right: 10px;
-}
-
-.fa-shopping-cart {
-  padding-left: 10px;
+.cta {
+  background-color: #8c4300;
+  border: none;
+  color: white;
+  padding: 15px 15px 15px 15px;
+  text-transform: uppercase;
+  font-family: "montserrat", sans-serif;
+  font-size: 13px;
+  border-radius: 15px;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
 /* Home Page*/
 
 main {
+  display: flex;
+  flex-direction: column;
   background-image: url(../images/front-page-img.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 50% 45%;
   background-size: cover;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -80,16 +88,18 @@ main {
 
 .maintext {
   color: white;
-  text-align: end;
-  padding-right: 40px;
+  text-align: right;
+  padding: 40px 50px 0px 0px;
 }
 
 h1 {
   font-family: "anton";
 }
 
-p {
+.slogan {
   font-family: "montserrat";
+  max-width: 350px;
+  margin-left: 1020px;
 }
 
 footer {
