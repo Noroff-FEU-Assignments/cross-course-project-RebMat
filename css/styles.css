@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Roboto&display=swap");
+
+@font-face {
+  font-family: anton;
+  src: url(../font/Anton-Regular.ttf);
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 600px 200px;
+}
+
+header {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  font-family: "montserrat", sans-serif;
+}
+
+.logo {
+  max-width: 115px;
+  height: auto;
+  padding-left: 50px;
+}
+
+.navigation {
+  text-align: center;
+  font-weight: 550;
+}
+
+ul {
+  margin: 0px 80px 0px 0px;
+}
+
+li {
+  display: inline;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  padding: 20px;
+  color: #0a3641;
+}
+
+a:hover {
+  font-weight: bolder;
+}
+
+.icons {
+  color: #0a3641;
+  text-align: end;
+  font-size: 25px;
+  padding-right: 50px;
+}
+
+.fa-search {
+  padding-right: 10px;
+}
+
+.fa-shopping-cart {
+  padding-left: 10px;
+}
+
+/* Home Page*/
+
+main {
+  background-image: url(../images/front-page-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.maintext {
+  color: white;
+  text-align: end;
+  padding-right: 40px;
+}
+
+h1 {
+  font-family: "anton";
+}
+
+p {
+  font-family: "montserrat";
+}
+
+footer {
+  background-color: #0a3641;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
