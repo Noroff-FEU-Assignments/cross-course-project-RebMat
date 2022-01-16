@@ -9,7 +9,7 @@
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 100px 600px 200px;
+  grid-template-rows: 100px 600px 300px;
 }
 
 header {
@@ -71,6 +71,28 @@ a:hover {
   letter-spacing: 1px;
   margin-top: 20px;
   cursor: pointer;
+}
+
+.cta:hover {
+  background-color: white;
+  color: #8c4300;
+}
+
+/* Footer */
+
+h2 {
+  font-family: "montserrat", sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.footer-overskrift {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
 }
 
 /* Home Page*/
