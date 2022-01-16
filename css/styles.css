@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Roboto&display=swap");
+
+@font-face {
+  font-family: anton;
+  src: url(../font/Anton-Regular.ttf);
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 600px 300px;
+}
+
+header {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  font-family: "montserrat", sans-serif;
+}
+
+.logo {
+  max-width: 115px;
+  height: auto;
+  padding: 0px 55px 0px 20px;
+}
+
+.navigation {
+  text-align: center;
+  font-weight: 550;
+}
+
+ul {
+  margin: 0px 80px 0px 0px;
+}
+
+li {
+  display: inline;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  padding: 20px;
+  color: #0a3641;
+}
+
+a:hover {
+  font-weight: bolder;
+}
+
+.icons {
+  color: #0a3641;
+  text-align: end;
+  font-size: 25px;
+  padding-right: 50px;
+}
+
+.cta {
+  background-color: #8c4300;
+  border: none;
+  color: white;
+  padding: 15px 15px 15px 15px;
+  text-transform: uppercase;
+  font-family: "montserrat", sans-serif;
+  font-size: 13px;
+  border-radius: 15px;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.cta:hover {
+  background-color: white;
+  color: #8c4300;
+}
+
+/* Footer */
+
+h2 {
+  font-family: "montserrat", sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.footer-overskrift {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+/* Home Page*/
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../images/front-page-img.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 45%;
+  background-size: cover;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.maintext {
+  color: white;
+  text-align: right;
+  padding: 40px 50px 0px 0px;
+}
+
+h1 {
+  font-family: "anton";
+}
+
+.slogan {
+  font-family: "montserrat";
+  max-width: 350px;
+  margin-left: 1020px;
+}
+
+footer {
+  background-color: #0a3641;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
