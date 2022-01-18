@@ -183,7 +183,7 @@ h1 {
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100px 600px 550px;
+    grid-template-rows: 100px 600px 560px;
   }
 
   .footer-content {
@@ -202,7 +202,7 @@ h1 {
 
   a,
   .fab {
-    padding: 0px;
+    padding: 5px;
   }
 
   h2 {
@@ -213,5 +213,20 @@ h1 {
 @media only screen and (max-width: 500px) {
   body {
     background-color: chocolate;
+  }
+
+  a,
+  footer {
+    font-size: 15px;
+  }
+
+  .maintext {
+    font-size: 15px;
+    text-align: center;
+    padding: 0px;
+  }
+
+  .cta-newcollection {
+    margin-top: 270px;
   }
 }
