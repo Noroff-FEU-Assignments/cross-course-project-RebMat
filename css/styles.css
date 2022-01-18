@@ -179,16 +179,39 @@ h1 {
 }
 
 @media only screen and (max-width: 860px) {
-  body {
-    background-color: #0a3641;
+  .container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 600px 550px;
   }
 
   .footer-content {
     display: block;
+    padding: 0px;
+    margin-top: 10px;
+  }
+
+  .footer-address {
+    margin: 0px;
+  }
+
+  p {
+    margin: 0px 0px 10px 0px;
+  }
+
+  a,
+  .fab {
+    padding: 0px;
+  }
+
+  h2 {
+    padding-top: 20px;
   }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
   body {
+    background-color: chocolate;
   }
 }
