@@ -10,7 +10,7 @@
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 100px 600px 300px;
+  grid-template-rows: 100px 610px 300px;
 }
 
 .cta {
@@ -33,7 +33,7 @@
 
 a {
   text-decoration: none;
-  padding: 20px;
+  padding: 10px 0px;
   color: white;
 }
 
@@ -61,16 +61,23 @@ header {
 }
 
 ul {
-  margin: 0px 80px 0px 0px;
+  padding: 0px;
 }
 
 li {
   display: inline;
   text-transform: uppercase;
+  font-size: 20px;
+  padding: 0px 20px;
 }
 
 .nav {
   color: #0a3641;
+  text-align: center;
+}
+
+.nav:hover {
+  color: #8c4300;
 }
 
 a:hover {
@@ -80,17 +87,15 @@ a:hover {
 .icons {
   text-align: end;
   font-size: 25px;
-  padding-right: 50px;
 }
 
 .fas {
   color: #0a3641;
+  padding-right: 30px;
 }
 
-.fab {
-  padding: 20px;
+.fas:hover {
   color: #8c4300;
-  font-size: 20px;
 }
 
 /* Footer */
@@ -121,7 +126,7 @@ h2 {
 .rainydays {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
 }
 
 .footer-subscribe {
@@ -138,13 +143,23 @@ h2 {
 .footer-social {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
+}
+
+.fab {
+  color: #8c4300;
+  font-size: 30px;
+  padding-right: 20px;
+}
+
+.fab:hover {
+  color: white;
 }
 
 .footer-address {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
 }
 
 /* Home Page*/
@@ -163,7 +178,7 @@ main {
 .maintext {
   color: white;
   text-align: right;
-  padding: 40px 50px 0px 0px;
+  padding: 30px 50px 0px 0px;
 }
 
 h1 {
@@ -175,55 +190,89 @@ h1 {
 }
 
 .cta-newcollection {
-  margin-top: 20px;
+  margin-top: 50px;
 }
+
+/* Media Queries */
 
 @media only screen and (max-width: 860px) {
   .container {
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100px 600px 560px;
+    grid-template-rows: 100px 600px 580px;
+  }
+
+  .logo {
+    max-width: 80px;
+    padding: 0px;
+  }
+
+  li {
+    padding: 0px 10px;
+  }
+
+  .fas {
+    padding-right: 10px;
   }
 
   .footer-content {
     display: block;
+    text-align: center;
     padding: 0px;
     margin-top: 10px;
+    font-size: 14px;
   }
 
   .footer-address {
     margin: 0px;
   }
 
-  p {
-    margin: 0px 0px 10px 0px;
+  a {
+    font-size: 17px;
+    padding: 5px;
   }
 
-  a,
   .fab {
+    font-size: 15px;
     padding: 5px;
   }
 
   h2 {
-    padding-top: 20px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 14px;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  body {
-    background-color: chocolate;
-  }
-
   a,
   footer {
     font-size: 15px;
+  }
+
+  .logo {
+    max-width: 70px;
+    padding: 0px;
+  }
+
+  li {
+    padding: 0px;
+  }
+
+  main {
+    background-position: top;
   }
 
   .maintext {
     font-size: 15px;
     text-align: center;
     padding: 0px;
+  }
+
+  h1,
+  .slogan {
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   .cta-newcollection {
