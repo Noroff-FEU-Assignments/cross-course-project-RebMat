@@ -12,32 +12,49 @@
   <body>
     <div class="container">
       <header>
-        <a href="index.html"><img src="../images/Rainydays-logo-white.png" alt="logo" class="logo" /></a>
+        <a href="../index.html"><img src="../images/Rainydays-logo-white.png" alt="logo" class="logo" /></a>
         <h1>Checkout</h1>
       </header>
-      <main></main>
+      <main>
+        <form action="checkout-success.html" method="GET">
+          <p>Shipping Information</p>
+          <input type="text" id="fname" name="fname" placeholder="First Name" />
+          <input type="text" id="lname" name="lname" placeholder="Last Name" />
+          <input type="text" id="address" name="address" placeholder="Address" />
+          <input type="text" id="pcode" name="pcode" placeholder="Postal Code" />
+          <input type="text" id="towncity" name="towncity" placeholder="Town/City" />
+          <input type="checkbox" name="save-address" value="save-address" id="save-address" /><label for="##">Save this as my billing address</label>
+          <p>Contact Information</p>
+          <input type="tel" id="tel" name="tel" placeholder="Phone Number" />
+          <input type="email" id="email" name="email" placeholder="Email Address" />
+          <input type="checkbox" name="send-offers" value="send-offers" id="send-offers" /><label for="##">Send me offers and news</label>
+          <input type="submit" value="Send" />
+        </form>
+      </main>
       <footer>
         <div class="footer-content">
           <div class="rainydays">
-            <h2>Rainy Days</h2>
+            <h4>Rainy Days</h4>
             <a href="html/about-us.html">About Us</a>
             <a href="html/contact-us.html">Contact Us</a>
           </div>
           <div class="footer-subscribe">
-            <h2>Subscribe to our newsletter</h2>
+            <h4>Subscribe to our newsletter</h4>
             <a href="#" class="cta cta-signup">Sign Up</a>
           </div>
           <div class="footer-social">
-            <h2>Social Media</h2>
+            <h4>Social Media</h4>
             <a href="#"><i class="fab fa-facebook-square"></i>Facebook</a>
             <a href="#"><i class="fab fa-instagram-square"></i>Instagram</a>
             <a href="#"><i class="fab fa-twitter-square"></i>Twitter</a>
           </div>
           <div class="footer-address">
-            <h2>Where to find us</h2>
-            <p>Strandgaten 60</p>
-            <p>5004 Bergen</p>
-            <p>Norway</p>
+            <h4>Where to find us</h4>
+            <div class="p-address">
+              <p>Strandgaten 60</p>
+              <p>5004 Bergen</p>
+              <p>Norway</p>
+            </div>
           </div>
         </div>
       </footer>

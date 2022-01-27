@@ -172,6 +172,26 @@ h2 {
   margin: auto;
 }
 
+form {
+  color: #0a3641;
+  font-family: "montserrat", Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+label {
+  font-weight: lighter;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 300px;
+  padding: 8px 10px;
+  border: 1px solid #0a3641;
+  margin: 6px 6px 6px auto;
+}
+
 /* Media Queries */
 
 @media only screen and (max-width: 860px) {
