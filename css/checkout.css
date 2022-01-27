@@ -15,6 +15,8 @@
 
 .cta {
   background-color: #8c4300;
+  max-width: 180px;
+  text-align: center;
   border: none;
   color: white;
   padding: 15px 15px 15px 15px;
@@ -29,6 +31,7 @@
 .cta:hover {
   background-color: white;
   color: #8c4300;
+  border: 1px solid #8c4300;
 }
 
 a {
@@ -45,7 +48,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(255, 255, 255);
+  background-color: #0a3641;
   font-family: "montserrat", sans-serif;
 }
 
@@ -55,29 +58,13 @@ header {
   padding: 0px 55px 0px 20px;
 }
 
-.navigation {
-  text-align: center;
-  font-weight: 550;
-}
-
-ul {
-  padding: 0px;
-}
-
-li {
-  display: inline;
+h1 {
+  font-family: "anton", Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
   text-transform: uppercase;
-  font-size: 20px;
-  padding: 0px 20px;
-}
-
-.nav {
-  color: #0a3641;
-  text-align: center;
-}
-
-.nav:hover {
-  color: #8c4300;
+  position: relative;
+  right: 50%;
+  margin-right: -50px;
 }
 
 a:hover {
@@ -87,15 +74,6 @@ a:hover {
 .icons {
   text-align: end;
   font-size: 25px;
-}
-
-.fas {
-  color: #0a3641;
-  padding-right: 30px;
-}
-
-.fas:hover {
-  color: #8c4300;
 }
 
 /* Footer */
@@ -108,7 +86,7 @@ footer {
   color: white;
 }
 
-h2 {
+h4 {
   font-family: "montserrat", sans-serif;
   text-transform: uppercase;
   color: white;
@@ -162,35 +140,36 @@ h2 {
   align-items: left;
 }
 
-/* Home Page*/
+/* Main - Checkout page & Checkout success  */
 
 main {
   display: flex;
   flex-direction: column;
-  background-image: url(../images/front-page-img.jpg);
-  background-repeat: no-repeat;
-  background-position: 50% 45%;
-  background-size: cover;
+  background-color: white;
   grid-column-start: 1;
   grid-column-end: 5;
 }
 
-.maintext {
-  color: white;
-  text-align: right;
-  padding: 30px 50px 0px 0px;
+.fa-check-circle {
+  color: #63c96f;
+  font-size: 70px;
+  text-align: center;
+  margin-top: 80px;
 }
 
-h1 {
-  font-family: "anton";
+.checkout-text {
+  color: #0a3641;
+  font-family: "montserrat", Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+h2 {
+  font-size: 50px;
+  font-weight: normal;
+  margin: 40px 0px;
 }
 
-.slogan {
-  font-family: "montserrat";
-}
-
-.cta-newcollection {
-  margin-top: 50px;
+.continue-shopping {
+  margin: auto;
 }
 
 /* Media Queries */
@@ -205,15 +184,16 @@ h1 {
 
   .logo {
     max-width: 80px;
-    padding: 0px;
+    padding: 0px 0px 0px 10px;
   }
 
-  li {
-    padding: 0px 10px;
+  h2 {
+    font-size: 30px;
   }
 
-  .fas {
-    padding-right: 10px;
+  h3,
+  p {
+    font-size: 15px;
   }
 
   .footer-content {
@@ -238,7 +218,7 @@ h1 {
     padding: 5px;
   }
 
-  h2 {
+  h4 {
     padding-top: 10px;
     text-align: center;
     font-size: 14px;
@@ -248,34 +228,16 @@ h1 {
 @media only screen and (max-width: 500px) {
   a,
   footer {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .logo {
     max-width: 65px;
-    padding: 0px;
-  }
-
-  li {
-    padding: 0px;
-  }
-
-  main {
-    background-position: top;
   }
 
   .maintext {
     font-size: 15px;
     text-align: center;
     padding: 0px;
-  }
-
-  h1,
-  .slogan {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-
-  .cta-newcollection {
-    margin-top: 270px;
   }
 }

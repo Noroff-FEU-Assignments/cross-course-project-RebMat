@@ -182,7 +182,7 @@ main {
 }
 
 h1 {
-  font-family: "anton";
+  font-family: "anton", Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .slogan {
@@ -190,7 +190,7 @@ h1 {
 }
 
 .cta-newcollection {
-  margin-top: 50px;
+  line-height: 6;
 }
 
 /* Media Queries */
@@ -229,7 +229,7 @@ h1 {
   }
 
   a {
-    font-size: 17px;
+    font-size: 14px;
     padding: 3px;
   }
 
@@ -248,7 +248,7 @@ h1 {
 @media only screen and (max-width: 500px) {
   a,
   footer {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .logo {
@@ -265,7 +265,7 @@ h1 {
   }
 
   .maintext {
-    font-size: 15px;
+    font-size: 14px;
     text-align: center;
     padding: 0px;
   }
@@ -276,6 +276,6 @@ h1 {
   }
 
   .cta-newcollection {
-    margin-top: 270px;
+    line-height: 40;
   }
 }
