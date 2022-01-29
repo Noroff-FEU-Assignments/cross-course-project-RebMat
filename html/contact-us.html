@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Business hours 08:00 - 16:00. Phone: +47 98765432" />
+    <meta name="description" content="Contact us" />
     <link rel="stylesheet" href="../css/styles.css" />
     <script src="https://kit.fontawesome.com/d29c0b21bc.js" crossorigin="anonymous"></script>
     <title>Contact Us - Rainy Days</title>
@@ -12,18 +12,18 @@
   <body>
     <div class="container">
       <header>
-        <a href="index.html"><img src="../images/RainyDays_Logo.png" alt="logo" class="logo" /></a>
+        <a href="../index.html"><img src="../images/RainyDays_Logo.png" alt="logo" class="logo" /></a>
         <nav>
           <div class="navigation">
             <ul>
               <li>
-                <a href="html/list-of-jackets-newin.html" class="nav">New In</a>
+                <a href="list-of-jackets-newin.html" class="nav">New In</a>
               </li>
               <li>
-                <a href="html/list-of-jackets-men.html" class="nav">Men</a>
+                <a href="list-of-jackets-men.html" class="nav">Men</a>
               </li>
               <li>
-                <a href="html/list-of-jackets-women.html" class="nav">Women</a>
+                <a href="list-of-jackets-women.html" class="nav">Women</a>
               </li>
             </ul>
           </div>
@@ -32,16 +32,33 @@
           <a href="#">
             <i class="fas fa-search"></i>
           </a>
-          <a href="html/checkout-page.html"> <i class="fas fa-shopping-cart"></i></a>
+          <a href="checkout-page.html"> <i class="fas fa-shopping-cart"></i></a>
         </div>
       </header>
-
+      <main class="contact-us">
+        <section class="innsending">
+          <form action="checkout-success.html" method="GET">
+            <input type="text" id="fullname" name="fullname" placeholder="Full Name" />
+            <input type="email" id="email" name="email" placeholder="Email Address" />
+            <textarea id="message" name="message" placeholder="Write a message.." style="height: 200px"></textarea>
+            <input type="submit" value="Send" />
+          </form>
+        </section>
+        <h1 class="contact">Contact Us</h1>
+        <section class="business-info">
+          <h2>Call us</h2>
+          <p>+47 98765432</p>
+          <h3>Business Hours</h3>
+          <p>Mon - Fri: 08:00 - 16:00</p>
+          <p>Sat - Sun: Closed</p>
+        </section>
+      </main>
       <footer>
         <div class="footer-content">
           <div class="rainydays">
             <h2>Rainy Days</h2>
-            <a href="html/about-us.html">About Us</a>
-            <a href="html/contact-us.html">Contact Us</a>
+            <a href="about-us.html">About Us</a>
+            <a href="contact-us.html">Contact Us</a>
           </div>
           <div class="footer-subscribe">
             <h2>Subscribe to our newsletter</h2>

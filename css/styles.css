@@ -76,12 +76,8 @@ li {
   text-align: center;
 }
 
-.nav:hover {
-  color: #8c4300;
-}
-
 a:hover {
-  text-decoration: underline;
+  color: #8c4300;
 }
 
 .icons {
@@ -146,6 +142,12 @@ h2 {
   align-items: left;
 }
 
+.footer-social a:hover,
+.rainydays a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
 .fab {
   color: #8c4300;
   font-size: 30px;
@@ -164,7 +166,7 @@ h2 {
 
 /* Home Page*/
 
-main {
+.homepage {
   display: flex;
   flex-direction: column;
   background-image: url(../images/front-page-img.jpg);
@@ -191,6 +193,76 @@ h1 {
 
 .cta-newcollection {
   line-height: 6;
+}
+
+/* Contact Us Page */
+
+.contact-us {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+form {
+  max-width: 400px;
+  color: #0a3641;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 60px;
+}
+
+textarea {
+  height: 200px;
+  width: 400px;
+  margin: 6px;
+  font-family: "montserrat", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  display: block;
+  width: 300px;
+  padding: 8px 10px;
+  margin: 6px;
+}
+
+input[type="submit"] {
+  margin: 10px 5px;
+  background-color: #8c4300;
+  max-width: 250px;
+  text-align: center;
+  border: none;
+  color: white;
+  padding: 15px 50px 15px 50px;
+  text-transform: uppercase;
+  font-size: 13px;
+  border-radius: 15px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: white;
+  color: #8c4300;
+  border: 1px solid #8c4300;
+}
+
+.contact {
+  grid-row: 2 / 4;
+  grid-column: 1 / 5;
+  text-transform: uppercase;
+  font-size: 80px;
+  background-color: #0a3641;
+  color: white;
+  margin: -80px 0px;
+  padding-left: 64px;
+}
+
+.business-info {
+  border: 2px solid #0a3641;
+  text-align: center;
 }
 
 /* Media Queries */
