@@ -185,7 +185,7 @@ h3 {
 }
 
 .continue-shopping {
-  margin: auto;
+  margin: 0 auto auto auto;
 }
 
 form {
@@ -285,7 +285,7 @@ input[type="submit"]:hover {
     grid-template-rows: 100px auto auto;
   }
 
-  main {
+  .main-checkout {
     display: flex;
     flex-direction: column-reverse;
     margin: 0 auto;
