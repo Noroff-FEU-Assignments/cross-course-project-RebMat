@@ -316,7 +316,7 @@ h3 {
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100px 600px 580px;
+    grid-template-rows: 100px auto 580px;
   }
 
   .logo {
@@ -340,7 +340,7 @@ h3 {
     font-size: 14px;
   }
 
-  .footer-address {
+  .footer-address p {
     margin: 0px;
   }
 
@@ -370,7 +370,7 @@ h3 {
   }
 
   .aboutus-info {
-    margin: 30px 30px auto 30px;
+    margin: 30px;
   }
 
   .aboutus-info p {
@@ -391,6 +391,10 @@ h3 {
 
   li {
     padding: 0px;
+  }
+
+  .navigation a {
+    font-size: 12px;
   }
 
   main {
