@@ -37,6 +37,10 @@ a {
   color: white;
 }
 
+h1 {
+  font-family: "anton", Verdana, Geneva, Tahoma, sans-serif;
+}
+
 /* Header */
 
 header {
@@ -162,10 +166,6 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: left;
-}
-
-h1 {
-  font-family: "anton", Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* Home Page*/
@@ -309,7 +309,7 @@ h3 {
   letter-spacing: 5px;
 }
 
-/* List of Jackets - New In*/
+/* List of Jackets */
 
 .container-list-of-jackets {
   display: grid;
@@ -344,25 +344,23 @@ h3 {
   font-family: "montserrat", Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.product-overview-men-women a,
 .product-overview a {
   color: #0a3641;
 }
 
+.product-overview-men-women a:hover,
 .product-overview a:hover {
   font-weight: bold;
 }
 
+.product-overview-men-women p,
 .product-overview p {
   margin: 0px;
 }
 
 .product-img {
   max-width: 200px;
-}
-
-.product-overview img:hover {
-  border: 2px solid #0a3641;
-  max-width: 198px;
 }
 
 .price {
@@ -378,13 +376,14 @@ h3 {
   object-fit: cover;
 }
 
-/* List of Jackets - Men & Womens*/
-
-.container-men-women {
+.product-overview-men-women {
   display: grid;
-  height: 100vh;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column: 1 / 5;
+  grid-row: 3;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  font-family: "montserrat", Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* Media Queries */
@@ -472,6 +471,35 @@ h3 {
     grid-row: 2;
     grid-column: 1 / 3;
   }
+
+  .product-overview-men-women {
+    display: grid;
+    grid-column: 1 / 5;
+    grid-row: 3;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    font-family: "montserrat", Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .product-overview {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .product-overview,
+  .product-overview-men-women a {
+    padding: 0px;
+  }
+
+  .new-in-header {
+    justify-content: center;
+  }
+
+  .new-in-header h1 {
+    margin-left: 0px;
+    font-size: 30px;
+    background-color: white;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -540,5 +568,17 @@ h3 {
 
   textarea {
     width: 270px;
+  }
+
+  .product-img {
+    max-width: 150px;
+  }
+
+  .ashley-section img,
+  .sophia-section img,
+  .andre-section img,
+  .benjamin-section img {
+    height: 225px;
+    object-fit: cover;
   }
 }
