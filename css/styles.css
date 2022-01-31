@@ -164,6 +164,10 @@ h2 {
   align-items: left;
 }
 
+h1 {
+  font-family: "anton", Verdana, Geneva, Tahoma, sans-serif;
+}
+
 /* Home Page*/
 
 .homepage {
@@ -181,10 +185,6 @@ h2 {
   color: white;
   text-align: right;
   padding: 30px 50px 0px 0px;
-}
-
-h1 {
-  font-family: "anton", Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .slogan {
@@ -307,6 +307,84 @@ h3 {
   font-size: 50px;
   margin: 20px;
   letter-spacing: 5px;
+}
+
+/* List of Jackets - New In*/
+
+.container-list-of-jackets {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px auto auto;
+}
+
+.new-in-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  grid-column: 1 / 5;
+}
+
+.new-in-header h1 {
+  text-transform: uppercase;
+  color: #0a3641;
+  font-size: 40px;
+  letter-spacing: 5px;
+  font-weight: lighter;
+  margin-left: 137px;
+}
+
+.product-overview {
+  display: grid;
+  grid-column: 1 / 5;
+  grid-row: 3;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  font-family: "montserrat", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.product-overview a {
+  color: #0a3641;
+}
+
+.product-overview a:hover {
+  font-weight: bold;
+}
+
+.product-overview p {
+  margin: 0px;
+}
+
+.product-img {
+  max-width: 200px;
+}
+
+.product-overview img:hover {
+  border: 2px solid #0a3641;
+  max-width: 198px;
+}
+
+.price {
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+
+.ashley-section img,
+.sophia-section img,
+.andre-section img,
+.benjamin-section img {
+  height: 299px;
+  object-fit: cover;
+}
+
+/* List of Jackets - Men & Womens*/
+
+.container-men-women {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 /* Media Queries */
