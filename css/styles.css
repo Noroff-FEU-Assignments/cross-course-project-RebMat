@@ -175,7 +175,7 @@ h2 {
 .homepage {
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url(../images/front-page-img.jpg);
+  background-image: url(../images/front-img5.jpg);
   background-repeat: no-repeat;
   background-position: 50% 45%;
   background-size: cover;
@@ -184,13 +184,20 @@ h2 {
 }
 
 .maintext {
-  color: white;
+  color: #0a3641;
   text-align: right;
   padding: 30px 50px 0px 0px;
+  line-height: 0.6;
+}
+
+.maintext h1 {
+  font-size: 50px;
+  font-weight: 100;
 }
 
 .slogan {
   font-family: "montserrat";
+  font-size: 19px;
 }
 
 .cta-newcollection {
@@ -732,6 +739,6 @@ h3 {
   }
 
   .cta-addtocart {
-    padding: 15px 75px;
+    padding: 15px;
   }
 }
