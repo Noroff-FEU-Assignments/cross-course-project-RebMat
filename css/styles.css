@@ -29,6 +29,7 @@
 .cta:hover {
   background-color: white;
   color: #8c4300;
+  border: 1px solid #8c4300;
 }
 
 a {
@@ -39,6 +40,7 @@ a {
 
 h1 {
   font-family: "anton", Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
 }
 
 /* Header */
@@ -173,7 +175,7 @@ h2 {
 .homepage {
   display: flex;
   flex-direction: column;
-  background-image: url(../images/front-page-img.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url(../images/front-page-img.jpg);
   background-repeat: no-repeat;
   background-position: 50% 45%;
   background-size: cover;
@@ -303,7 +305,6 @@ h3 {
 
 .aboutus-info h1 {
   text-align: center;
-  text-transform: uppercase;
   font-size: 50px;
   margin: 20px;
   letter-spacing: 5px;
@@ -318,6 +319,10 @@ h3 {
   grid-template-rows: 100px auto auto;
 }
 
+.main-list {
+  grid-column: 1 / 5;
+}
+
 .new-in-header {
   display: flex;
   flex-direction: row;
@@ -326,8 +331,6 @@ h3 {
 }
 
 .new-in-header h1 {
-  text-transform: uppercase;
-  color: #0a3641;
   font-size: 40px;
   letter-spacing: 5px;
   font-weight: lighter;
@@ -384,6 +387,98 @@ h3 {
   grid-template-rows: 1fr 1fr;
   justify-items: center;
   font-family: "montserrat", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.product-img:hover {
+  opacity: 0.5;
+}
+
+/* Jacket Specific Page */
+
+.container-jacket-specific {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px 610px auto;
+}
+
+.main-jacket-specific {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column: 1 / 5;
+  justify-items: left;
+}
+
+.product-img-big {
+  max-width: 340px;
+  margin: 50px 50px 50px 80px;
+}
+
+.product-img-small {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.product-img-small:hover {
+  opacity: 0.5;
+}
+
+.product-choice {
+  font-family: "montserrat", Verdana, Geneva, Tahoma, sans-serif;
+  color: #0a3641;
+  margin-top: 50px;
+}
+
+.product-choice h1 {
+  margin: 0px;
+  font-size: 35px;
+  font-weight: lighter;
+}
+
+.product-choice h2 {
+  color: #0a3641;
+  margin: 0px 0px 30px 0px;
+}
+
+.sizes {
+  display: flex;
+}
+
+.sizes p {
+  padding-right: 20px;
+}
+
+.sizes p:hover {
+  text-decoration: underline;
+}
+
+.cta-addtocart {
+  display: inline-block;
+  padding: 15px 75px;
+  margin-top: 20px;
+}
+
+.product-info {
+  border: 1px solid #0a3641;
+  margin: 60px 0px 255px 0px;
+  padding: 0px 70px;
+}
+
+.product-info h3 {
+  font-family: "montserrat", Verdana, Geneva, Tahoma, sans-serif;
+  color: #0a3641;
+  font-size: 17px;
+}
+
+.product-info p {
+  font-family: "montserrat", Verdana, Geneva, Tahoma, sans-serif;
+  color: #0a3641;
+}
+
+.product-info span {
+  font-weight: bold;
 }
 
 /* Media Queries */
