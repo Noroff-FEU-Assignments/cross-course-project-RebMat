@@ -363,7 +363,7 @@ input[type="submit"]:hover {
   }
 
   .logo {
-    max-width: 65px;
+    max-width: 50px;
   }
 
   .maintext {
@@ -378,7 +378,13 @@ input[type="submit"]:hover {
   }
 
   .order-summary {
-    max-width: 300px;
+    max-width: 288px;
     margin: 10px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    width: 260px;
   }
 }
