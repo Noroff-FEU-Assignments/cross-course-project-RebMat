@@ -467,6 +467,7 @@ h3 {
 
 .sizes p:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .cta-addtocart {
