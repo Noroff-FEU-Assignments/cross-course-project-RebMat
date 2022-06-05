@@ -78,6 +78,10 @@ a:hover {
   text-decoration: underline;
 }
 
+.nav {
+  color: #0a3641;
+}
+
 /* Footer */
 
 footer {

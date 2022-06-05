@@ -82,18 +82,21 @@ h2 {
   width: 70px;
   height: 70px;
   background-size: cover;
-  margin: 10px 0px;
+  margin: 10px;
 }
 
 .cart-page {
   max-width: 400px;
-  margin: 0 auto;
   background: #efefef;
-  border-radius: 20px 0px;
   padding: 20px;
+  margin: 50px 0px;
 }
 
 .cart-item {
   display: flex;
   justify-content: space-between;
+}
+
+.cart-item h4 {
+  color: #0a3641;
 }
