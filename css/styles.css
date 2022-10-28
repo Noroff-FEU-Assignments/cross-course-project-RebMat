@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Roboto&display=swap");
+@import url(new-products.css);
 
 @font-face {
   font-family: anton;
@@ -12,7 +13,7 @@
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 100px 610px 300px;
+  grid-template-rows: 100px 100vh 300px;
 }
 
 .cta {
@@ -326,11 +327,11 @@ h3 {
 
 /* List of Jackets */
 
-.container-list-of-jackets {
+/* .container-list-of-jackets {
   display: grid;
   height: 100vh;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 100px auto auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr;
 }
 
 .main-list {
@@ -350,9 +351,9 @@ h3 {
   font-weight: lighter;
   margin-left: 137px;
   color: #0a3641;
-}
+} */
 
-.product-overview {
+/* .product-overview {
   display: grid;
   grid-column: 1 / 5;
   grid-row: 3;
@@ -379,9 +380,9 @@ h3 {
 
 .product-img {
   max-width: 200px;
-}
+} */
 
-.hoverwrap {
+/* .hoverwrap {
   position: relative;
   max-width: 500px;
 }
@@ -409,9 +410,9 @@ h3 {
 .hoverwrap:hover .hovercap {
   visibility: visible;
   opacity: 1;
-}
+} */
 
-.price {
+/* .price {
   font-weight: bold;
   padding-bottom: 30px;
 }
@@ -422,9 +423,9 @@ h3 {
 .benjamin-section img {
   height: 299px;
   object-fit: cover;
-}
+} */
 
-.product-overview-men-women {
+/* .product-overview-men-women {
   display: grid;
   grid-column: 1 / 5;
   grid-row: 3;
@@ -436,7 +437,7 @@ h3 {
 
 .product-img:hover {
   opacity: 0.5;
-}
+} */
 
 /* Jacket Specific Page */
 

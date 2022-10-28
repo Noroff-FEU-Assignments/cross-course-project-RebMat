@@ -1,0 +1,74 @@
+/* List of Jackets - Mens */
+
+.container-products {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  /* grid-template-rows: 100px 100vh 300px; */
+}
+
+/* .container-list-of-jackets {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr;
+} */
+
+/* .new-in-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  grid-column: 1 / 5;
+} */
+
+.new-in-header h1 {
+  font-size: 40px;
+  letter-spacing: 5px;
+  font-weight: lighter;
+  margin-left: 137px;
+  color: #0a3641;
+}
+
+.products-men,
+.products-women,
+.products-newin {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0px 25px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  background: rgb(241, 241, 245);
+  padding: 10px;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.product:hover {
+  transform: scale(1.015);
+  animation: up-bump 0.4s ease;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.product h2 {
+  color: #0a3641;
+  margin-left: 39px;
+}
+
+.product p {
+  font-family: "montserrat", Tahoma, Geneva, Verdana, sans-serif;
+  color: #0a3641;
+  margin-left: 39px;
+}
+
+.product-img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  align-self: center;
+  border-radius: 5px;
+  margin-top: 15px;
+}
