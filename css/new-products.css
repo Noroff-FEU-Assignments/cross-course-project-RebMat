@@ -1,26 +1,10 @@
-/* List of Jackets - Mens */
+/* List of Jackets */
 
 .container-products {
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr;
-  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
-  /* grid-template-rows: 100px 100vh 300px; */
 }
-
-/* .container-list-of-jackets {
-  display: grid;
-  height: 100vh;
-  grid-template-columns: 1fr;
-  grid-template-rows: 100px 1fr;
-} */
-
-/* .new-in-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  grid-column: 1 / 5;
-} */
 
 .new-in-header h1 {
   font-size: 40px;
@@ -48,20 +32,49 @@
 }
 
 .product:hover {
-  transform: scale(1.015);
-  animation: up-bump 0.4s ease;
+  /* transform: scale(1.015);
+  animation: up-bump 0.4s ease; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.info-container {
+  display: inherit;
+  justify-content: space-between;
 }
 
 .product h2 {
   color: #0a3641;
-  margin-left: 39px;
+  margin: 10px 0px 10px 39px;
 }
 
 .product p {
   font-family: "montserrat", Tahoma, Geneva, Verdana, sans-serif;
   color: #0a3641;
-  margin-left: 39px;
+  margin: 10px 39px 10px 0px;
+}
+
+.product a {
+  text-align: center;
+}
+
+.product button {
+  text-align: center;
+  background-color: #8c4300;
+  border: 1px solid #8c4300;
+  color: white;
+  padding: 15px 15px 15px 15px;
+  text-transform: uppercase;
+  font-family: "montserrat", sans-serif;
+  font-size: 13px;
+  border-radius: 15px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.product button:hover {
+  background-color: white;
+  color: #8c4300;
+  border: 1px solid #8c4300;
 }
 
 .product-img {
@@ -70,5 +83,4 @@
   object-fit: cover;
   align-self: center;
   border-radius: 5px;
-  margin-top: 15px;
 }

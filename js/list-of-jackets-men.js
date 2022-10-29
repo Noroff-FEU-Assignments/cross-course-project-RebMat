@@ -8,11 +8,16 @@ async function getProducts(url) {
     console.log(getResults);
     productContainer.innerHTML = "";
     getResults.forEach(function (product) {
-      productContainer.innerHTML += `<div class="product">
-      <img src="${product.images[0].src}" alt="" class="product-img"> 
-      <h2 class="">${product.name}</h2>
-      <p class="price">${product.prices.price} NOK</p>
-      </div>`;
+      productContainer.innerHTML += `
+        <div class="product">
+          <img src="${product.images[0].src}" alt="" class="product-img"> 
+          <div class="info-container">
+           <h2 class="">${product.name}</h2>
+           <p class="price">${product.prices.price} NOK</p>
+          </div>
+          <a href="jacket-specific.html"><button>View Product</button></a>
+        </div>
+      `;
     });
   } catch (error) {
     console.log(error);
@@ -20,3 +25,5 @@ async function getProducts(url) {
 }
 
 getProducts(url);
+
+// ?id=${results.id} skal limes inn etter jacket-specific.html
