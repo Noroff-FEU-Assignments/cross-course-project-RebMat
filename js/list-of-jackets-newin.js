@@ -15,7 +15,7 @@ async function getProducts(url) {
            <h2 class="">${product.name}</h2>
            <p class="price">${product.prices.price} NOK</p>
           </div>
-          <a href="jacket-specific.html"><button>View Product</button></a>
+          <a href="jacket-specific.html?id=${product.id}"><button>View Product</button></a>
         </div>
       `;
     });
