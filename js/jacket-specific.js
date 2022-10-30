@@ -16,12 +16,15 @@ async function getProduct() {
     jacketSpecific.innerHTML = "";
     jacketSpecific.innerHTML = `
         <img src="${product.images[0].src}" alt="" class="product-img"> 
-        <h1 class="product-specific-name">${product.name}</h1>
-        <p class="price">${product.prices.price} NOK</p>
-        <a href="" class="add-to-cart-button"><button>Add to cart</button></a>
-        <div class="product-description">
-        <p>${product.description}</p>
+        <div class="info-container">
+          <h1 class="product-specific-name">${product.name}</h1>
+          <p class="price">Price: ${product.prices.price} NOK</p>
+           <div class="product-description">
+            <p>${product.description}</p>
+           </div> 
         </div>
+        <a href="" class="add-to-cart-button"><button>Add to cart</button></a>
+
     `;
   } catch (error) {
     console.log(error);
