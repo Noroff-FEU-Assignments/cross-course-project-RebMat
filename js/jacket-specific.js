@@ -8,7 +8,7 @@ console.log(id);
 
 const url = "https://rebmat.site/rainydays/wp-json/wc/store/products/" + id;
 
-async function getData() {
+async function getProduct() {
   try {
     const response = await fetch(url);
     const product = await response.json();
@@ -28,4 +28,4 @@ async function getData() {
   }
 }
 
-getData();
+getProduct();
