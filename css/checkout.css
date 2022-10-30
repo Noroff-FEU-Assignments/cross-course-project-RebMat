@@ -1,0 +1,394 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Roboto&display=swap");
+
+@font-face {
+  font-family: anton;
+  src: url(../font/Anton-Regular.ttf);
+}
+/* Global */
+
+.container-checkout {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px 630px 300px;
+}
+
+.container-success {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px 630px 300px;
+}
+
+.cta {
+  background-color: #8c4300;
+  max-width: 180px;
+  text-align: center;
+  border: none;
+  color: white;
+  padding: 15px 15px 15px 15px;
+  text-transform: uppercase;
+  font-family: "montserrat", sans-serif;
+  font-size: 13px;
+  border-radius: 15px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.cta:hover {
+  background-color: white;
+  color: #8c4300;
+  border: 1px solid #8c4300;
+}
+
+a {
+  text-decoration: none;
+  padding: 10px 0px;
+  color: white;
+}
+
+/* Header */
+
+header {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0a3641;
+  font-family: "montserrat", sans-serif;
+}
+
+.logo {
+  max-width: 115px;
+  height: auto;
+  padding: 0px 55px 0px 20px;
+}
+
+h1 {
+  font-family: "anton", Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  text-transform: uppercase;
+  position: relative;
+  right: 50%;
+  margin-right: -50px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.nav {
+  color: #0a3641;
+}
+
+/* Footer */
+
+footer {
+  background-color: #0a3641;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  font-family: "montserrat", sans-serif;
+  color: white;
+}
+
+h4 {
+  font-family: "montserrat", sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+
+.rainydays {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.footer-subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cta-signup {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.fab {
+  color: #8c4300;
+  font-size: 30px;
+  padding-right: 20px;
+}
+
+.fab:hover {
+  color: white;
+}
+
+.footer-address {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+/* Main - Checkout page */
+
+main {
+  grid-column: 1 /5;
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "montserrat", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.order-summary {
+  border: 2px solid #0a3641;
+  width: 400px;
+  margin: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 70px 150px 150px 70px;
+}
+
+.order-summary span {
+  display: block;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: normal;
+  color: white;
+  background-color: #0a3641;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 20px;
+  grid-column: 1 / 3;
+}
+
+h3 {
+  border-top: 2px solid #0a3641;
+  padding: 40px;
+  grid-column: 1 / 3;
+  text-align: center;
+}
+
+.patrick-jacket,
+.sophia-jacket {
+  max-width: 70px;
+  margin: 15px;
+  border: 2px solid #0a3641;
+}
+
+.continue-shopping {
+  margin: 0 auto auto auto;
+}
+
+form {
+  max-width: 400px;
+  color: #0a3641;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 60px;
+}
+
+label {
+  font-weight: lighter;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  display: block;
+  width: 300px;
+  padding: 8px 10px;
+  margin: 6px;
+}
+
+.contact-info,
+.shipping-info,
+#save-address,
+#send-offers {
+  margin-left: 10px;
+}
+
+.contact-info {
+  margin-top: 25px;
+}
+
+input[type="submit"] {
+  margin: 20px 0px 0px 60px;
+  background-color: #8c4300;
+  max-width: 250px;
+  text-align: center;
+  border: none;
+  color: white;
+  padding: 15px 20px 15px 20px;
+  text-transform: uppercase;
+  font-size: 13px;
+  border-radius: 15px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: white;
+  color: #8c4300;
+  border: 1px solid #8c4300;
+}
+
+/* Checkout success */
+
+.success {
+  display: grid;
+  grid-column: 1 /5;
+  background-color: white;
+  justify-content: space-evenly;
+  font-family: "montserrat", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.fa-check-circle {
+  color: #63c96f;
+  font-size: 70px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.checkout-text {
+  color: #0a3641;
+  text-align: center;
+}
+
+.checkout-text h2 {
+  background-color: white;
+  color: #0a3641;
+  font-size: 35px;
+  padding: 0px;
+}
+
+.checkout-text h3 {
+  border-top: none;
+  padding: 0px;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1000px) {
+  .container-checkout {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px auto auto;
+  }
+
+  .container-success {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 630px auto;
+  }
+
+  .main-checkout {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 auto;
+  }
+
+  h3 {
+    margin: 0;
+    padding: 15px 0px 10px 0px;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .logo {
+    max-width: 80px;
+    padding: 0px 0px 0px 10px;
+  }
+
+  h3,
+  p {
+    font-size: 15px;
+  }
+
+  h3 {
+    margin: 0;
+    padding: 20px 0px 10px 0px;
+  }
+
+  .footer-content {
+    display: block;
+    text-align: center;
+    padding: 0px;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .footer-address {
+    margin: 0px;
+  }
+
+  a {
+    font-size: 17px;
+    padding: 3px;
+  }
+
+  .fab {
+    font-size: 15px;
+    padding: 5px;
+  }
+
+  h4 {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  a,
+  footer {
+    font-size: 14px;
+  }
+
+  .logo {
+    max-width: 50px;
+  }
+
+  .maintext {
+    font-size: 15px;
+    text-align: center;
+    padding: 0px;
+  }
+
+  form {
+    max-width: 250px;
+    margin: 60px 0px;
+  }
+
+  .order-summary {
+    max-width: 288px;
+    margin: 10px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    width: 260px;
+  }
+}

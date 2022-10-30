@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping cart</title>
+    <link href="css/products.css" rel="stylesheet" />
+    <link href="css/checkout.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><img src="images/Rainydays-logo-white.png" alt="logo" class="logo" /></a>
+      <h1>Checkout</h1>
+    </header>
+    <main>
+      <section class="form-seksjon">
+        <form action="checkout-success.html" method="GET">
+          <p class="shipping-info">Shipping Information</p>
+          <input type="text" id="fname" name="fname" placeholder="First Name" />
+          <input type="text" id="lname" name="lname" placeholder="Last Name" />
+          <input type="text" id="address" name="address" placeholder="Address" />
+          <input type="text" id="pcode" name="pcode" placeholder="Postal Code" />
+          <input type="text" id="towncity" name="towncity" placeholder="Town/City" />
+          <input type="checkbox" name="save-address" value="save-address" id="save-address" /><label for="save-address">Save this as my billing address</label>
+          <p class="contact-info">Contact Information</p>
+          <input type="tel" id="tel" name="tel" placeholder="Phone Number" />
+          <input type="email" id="email" name="email" placeholder="Email Address" />
+          <input type="checkbox" name="send-offers" value="send-offers" id="send-offers" /><label for="send-offers">Send me offers and news</label>
+          <input type="submit" value="Proceed to payment" />
+        </form>
+      </section>
+      <section class="cart-page">
+        <div class="cart-list"></div>
+        <div class="total"></div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div class="rainydays">
+          <h4>Rainy Days</h4>
+          <a href="about-us.html">About Us</a>
+          <a href="contact-us.html">Contact Us</a>
+        </div>
+        <div class="footer-subscribe">
+          <h4>Subscribe to our newsletter</h4>
+          <a href="#" class="cta cta-signup">Sign Up</a>
+        </div>
+        <div class="footer-social">
+          <h4>Social Media</h4>
+          <a href="#"><i class="fab fa-facebook-square"></i>Facebook</a>
+          <a href="#"><i class="fab fa-instagram-square"></i>Instagram</a>
+          <a href="#"><i class="fab fa-twitter-square"></i>Twitter</a>
+        </div>
+        <div class="footer-address">
+          <h4>Where to find us</h4>
+          <div class="p-address">
+            <p>Strandgaten 60</p>
+            <p>5004 Bergen</p>
+            <p>Norway</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/cart.js" type="module"></script>
+  </body>
+</html>
