@@ -1,4 +1,4 @@
-const url = "http://rebmat.site/rainydays/wp-json/wc/store/products?category=26";
+const url = "https://rebmat.site/rainydays/wp-json/wc/store/products?category=26";
 const productContainer = document.querySelector(".products-women");
 
 async function getProducts(url) {
